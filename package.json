@@ -1,0 +1,46 @@
+{
+  "name": "webpack-tampermonkey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/good-monkey.user.js",
+  "scripts": {
+    "build": "webpack && prettier --write dist/*.js",
+    "dev": "webpack --watch -c webpack.dev.config.ts",
+    "format": "prettier --write **/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SettingDust/webpack-tampermonkey.git"
+  },
+  "keywords": [
+    "webpack",
+    "tampermonkey"
+  ],
+  "author": "SettingDust",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SettingDust/webpack-tampermonkey/issues"
+  },
+  "homepage": "https://github.com/SettingDust/webpack-tampermonkey#readme",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/node": "^16.7.13",
+    "autoprefixer": "^10.3.4",
+    "chalk": "^4.1.2",
+    "css-loader": "^6.2.0",
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "prettier": "^2.3.2",
+    "sass": "^1.39.0",
+    "sass-loader": "^12.1.0",
+    "terser-webpack-plugin": "^5.2.3",
+    "to-string-loader": "github:gajus/to-string-loader",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
