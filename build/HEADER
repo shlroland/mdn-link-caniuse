@@ -1,0 +1,11 @@
+// ==UserScript==
+// @name        Good Monkey
+// @description A good monkey
+// @version     1.0.0
+// 
+// @match       *developer.mozilla.org/*
+// 
+// @grant       GM_addStyle
+// 
+// @require     file:///Users/wsdehl/Desktop/practice/mdn-link-caniuse/build/good-monkey.user.js
+// ==/UserScript==
