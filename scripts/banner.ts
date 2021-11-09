@@ -1,4 +1,5 @@
 import metadata from '../monkey.config'
+import * as path from 'path'
 
 const paddingLength = 1 + Object.keys(metadata).reduce((prev, curr) => (curr.length > prev ? curr.length : prev), 0)
 
@@ -19,7 +20,9 @@ export default (dev: boolean = false): string => {
   const metas: string[] = []
   if (dev) {
     if (!metadata.require) metadata.require = []
-    metadata.require.push('file://' + __dirname + '\\build\\' + metadata.name.toLowerCase().replace(' ', '-') + '.user.js')
+    metadata.require.push(
+      'file://' + path.resolve(process.cwd(), 'build', metadata.name.toLowerCase().replace(' ', '-') + '.user.js')
+    )
   }
   for (const [key, value] of Object.entries(metadata)) {
     if (Array.isArray(value) && value.length) {

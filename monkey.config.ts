@@ -1,9 +1,9 @@
 /// <reference path="./types/monkey.d.ts" />
 
 export default {
-  name: 'Good Monkey',
-  description: 'A good monkey',
+  name: 'caniuse-MDN',
+  description: '从MDN页面直接跳转到caniuse',
   version: '1.0.0',
-  match: ['http*://*.github.com/*'],
+  match: ['*developer.mozilla.org/*'],
   grant: ['GM_addStyle']
 } as Monkey.Metadata
